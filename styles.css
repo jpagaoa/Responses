@@ -1,0 +1,200 @@
+/* Cat website */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: helvetica, sans-serif;
+	font-weight: lighter;
+	margin: 0;
+	padding: 0.5em;
+	background: white;
+	color: black;
+	font-size: 15px;
+	line-height: 1.2;
+}
+
+main {
+	max-width: 35em;
+	margin: 5em auto;
+	border-top: 2em solid black;
+	padding: 0 0.5em;
+	perspective: 20em;
+
+}
+
+h1, h2,{
+	font-size: 2em;
+	margin: 0 0 1rem 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 16px;
+	color: black;
+	font-weight: lighter;
+}
+
+h3{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+h4{
+	margin: 0 0 1rem 0;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+h5{
+	margin: 0 0 1rem 0;
+	font-size: 90px;
+	font-weight: bolder;
+
+}
+
+p {
+	margin: 0 0 1rem 0;
+	column-count: 2;
+	column-gap: 40px;
+	font-size: 12px;
+}
+
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+}
+
+.borders {
+	border-radius: 0 10em 1em 0;
+	animation-name: borders;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform: rotateY(20deg);
+	transform-origin: left;
+	transition: transform 0.5s;
+}
+
+.borders:hover {
+	transform: rotateX(-2deg);
+}
+
+@keyframes borders {
+	from { border-radius: 0 10em 1em 0; }
+	to { border-radius: 0 1em 10em 0; }
+}
+
+.button {
+	text-decoration: overline 0px;
+	color: black;
+	display: inline-block;
+	margin: 1em 1.5em;
+	transition: color 0.25s;
+}
+
+.button:hover {
+	color: red;
+}
+
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: red;
+	z-index: 2;
+	padding: 0.5em;
+	display: flex;
+	justify-content: flex-end; 
+	font-weight: bold;
+}
+
+
+nav a {
+	color: black;
+	margin: .8em;
+	text-decoration: none;
+	transition: color 0.25s;
+}
+
+
+nav a:hover {
+
+	color: darkgreen;
+	font-size: 1.2em;
+}
+
+.toggle p {
+	opacity: 0.2;
+}
+
+.toggle p:hover {
+	opacity: 1;
+	font-size: 12px;
+	column-rule-style: solid;
+	column-rule: 5px solid lightblue;
+	
+}
+
+.toggle h4{
+	color: lightgrey;
+}
+
+.toggle h4:hover {
+	color: black;
+	font-size: 13px;
+}
+
+
+.branding {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.active {
+	text-decoration: underline;
+	color: green;
+}
+
+
+.grid {
+	margin-top: 5em;
+	display: block;
+	max-width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.item{
+	width: 100%;
+	padding: 0.5em;
+}
+
+@media (min-width: 700px) {
+	.item {
+		width: 50%;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.item{
+		width: 33.3%;
+	}
+}
+
+
+
+
+	
